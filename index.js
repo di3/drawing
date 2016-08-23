@@ -29,7 +29,7 @@ function touchEngage(e) {
 function touchPutPoint(e) {
 	if (e.touches) {
 		for (var i in e.touches) {
-      var touch = e.touches[i]; // Get the information for finger #i
+			var touch = e.touches[i]; // Get the information for finger #i
 			// the putPoint function will handle offsets
 			var touchX=touch.pageX;
 			var touchY=touch.pageY;
@@ -47,19 +47,19 @@ function touchDisengage(e) {
 
 // Prevent scrolling when touching the canvas
 document.body.addEventListener("touchstart", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
+	if (e.target == canvas) {
+		e.preventDefault();
+	}
 }, false);
 document.body.addEventListener("touchend", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
+	if (e.target == canvas) {
+		e.preventDefault();
+	}
 }, false);
 document.body.addEventListener("touchmove", function (e) {
-  if (e.target == canvas) {
-    e.preventDefault();
-  }
+	if (e.target == canvas) {
+		e.preventDefault();
+	}
 }, false);
 
 /* handle mouse events */
